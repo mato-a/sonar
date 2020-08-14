@@ -16,6 +16,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: |
-        docker build . --file Dockerfile --tag sonar-scanner:0.1
+        docker build . --file Dockerfile --tag mato123456/sonar-scanner:0.1
         docker push mato123456/sonar-scanner:0.1
         docker push mato123456/sonar-scanner:latest
