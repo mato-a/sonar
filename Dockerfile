@@ -12,4 +12,3 @@ RUN test "${CHECKSUM}" = "$(sha256sum /tmp/sonar.zip | awk '{print $1}')"
 RUN unzip -q /tmp/sonar.zip -d /tmp
 RUN cp -r /tmp/sonar-scanner-${SONAR_VERSION}/* /usr/
 
-ENTRYPOINT [ "bash", "-c" ]
